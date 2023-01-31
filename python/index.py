@@ -48,6 +48,7 @@ def delete_sg_rule(sg_id, sgr_id):
         GroupId=sg_id,
         SecurityGroupRuleIds=[sgr_id]
     )
+    print("sg rule", sgr_id, "deleted")
     
 def send_sns_message(sg_id, sgr_id, sgr_cidr, sgr_prot, sgr_fport, sgr_tport):
     message={
