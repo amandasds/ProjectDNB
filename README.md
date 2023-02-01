@@ -4,7 +4,7 @@
 Security Groups are created and attached to EC2 instances. And these Security Groups may include ingress that could be considered insecure. An existing or launched instance should not be allowed to have ingress with 0.0.0.0/0 and port any nor any other specific port.
 
 ### The Requirements:
-#### In terraform do the following the following:
+#### In terraform:
 - Create event handlers for the events
 - Create the lambda deployment
 - Add logging in cloudwatch
